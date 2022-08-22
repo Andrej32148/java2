@@ -21,7 +21,7 @@ public static void printRoom(String name, double square){
 public static void printFlat(){
 
   printRoom ("кухни", square1);
-printRoom ( "гостинной " , square2);
+printRoom ( "гостинной" , square2);
 }
 
     public static void main(String[] args) {
