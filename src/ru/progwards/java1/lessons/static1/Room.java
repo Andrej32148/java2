@@ -14,7 +14,7 @@ return square;
 }
 
 public static void printRoom(String name, double square){
-    System.out.println("Площадь "+name+" сотавляет "+square+" м2");
+    System.out.println("Площадь "+name+" составляет "+square+" м2");
 }
 
 
