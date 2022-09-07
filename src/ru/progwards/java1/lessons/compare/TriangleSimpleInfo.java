@@ -2,27 +2,26 @@ package ru.progwards.java1.lessons.compare;
 
 public class TriangleSimpleInfo {
     public static int maxSide(int a, int b, int c) {
-        if (a > b && a > c) {
+        if (a > b & a > c) {
             return a;
         }
-        if (b > a && b > c) {
+        if (b > a & b > c) {
             return b;
         }
-        if (c > b && c > a) {
+        if (c > b & c > a) {
             return c;
         }
         return 0;
     }
-
     public static int minSide(int a, int b, int c) {
-        if (a < b && a < c) {
+        if (a < b & a < c) {
             return a;
         }
-        if (b < a && b < c) {
+        if (b < a & b < c) {
             return b;
         }
 
-        if (c < b && c < a) {
+        if (c < b & c < a) {
             return c;
         }
 
