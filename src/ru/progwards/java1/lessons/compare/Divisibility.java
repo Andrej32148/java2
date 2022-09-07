@@ -17,7 +17,7 @@ public class Divisibility {
             else {
                 System.out.println("Остаток от деления " + num1 + " на " + num2 + " равен " + a);
             }
-            System.out.println("Частное от деления " + num1 + " на " + num2 + " равно " + (int) b);
+            System.out.println("Частное от деления " + num1 + " на " + num2 + " равно " +  b);
         }
     }
     public static void main(String[] args) {
