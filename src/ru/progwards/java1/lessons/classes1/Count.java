@@ -1,7 +1,7 @@
 package ru.progwards.java1.lessons.classes1;
 
 public class Count {
-    int count = 0;
+    int count ;
 
     public Count(int count) {
         this.count = count;
@@ -23,10 +23,8 @@ public class Count {
     public static void main(String[] args) {
         Count count1 = new Count(10);
         for (int i = count1.getCount(); i > 0; i--) {
-
             count1.dec();
-
-            if (count1.getCount() == 0) {
+            if (count1.dec()) {
                 System.out.println("count равен 0");
                 return;
             }
