@@ -3,6 +3,7 @@ package ru.progwards.java1.lessons.useclasses;
 public class Count {
     int count=0;
 
+
     public Count(int count) {
         this.count = count;
     }
