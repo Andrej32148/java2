@@ -32,7 +32,7 @@ public class ComplexNum {
     }
 
     public ComplexNum div(ComplexNum num) {
-        return new ComplexNum(((a * num.a) + (b * num.b)) / (num.a * num.a * num.b * num.b), ((b * num.a) - (a * num.b)) / (num.a * num.a * num.b * num.b));
+        return new ComplexNum(((a * num.a) + (b * num.b)) / (num.a * num.a * num.b * num.b), ((b * num.a) - (a * num.b)) / (num.a * num.a + num.b * num.b));
     }
 
     public static void main(String[] args) {
