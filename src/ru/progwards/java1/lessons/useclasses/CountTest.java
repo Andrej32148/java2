@@ -5,9 +5,10 @@ package ru.progwards.java1.lessons.useclasses;
 public class CountTest {
     Count count;
 
-    public void setCount(Count count) {
+    public CountTest(Count count) {
         this.count = count;
     }
+
 
     public static void testInc(int count){
         Count count1=new Count(count);

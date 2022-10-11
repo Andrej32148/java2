@@ -28,7 +28,7 @@ public class ComplexNum {
 
     public ComplexNum mul(ComplexNum num) {
 
-        return new ComplexNum((a * num.a) - (b * num.b), (b * num.a) - (a * num.b));
+        return new ComplexNum((a * num.a) - (b * num.b), (b * num.a) + (a * num.b));
     }
 
     public ComplexNum div(ComplexNum num) {
