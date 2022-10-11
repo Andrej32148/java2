@@ -1,7 +1,7 @@
 package ru.progwards.java1.lessons.classes1;
 
 public class Count {
-    int count ;
+    int count=0;
 
     public Count(int count) {
         this.count = count;
