@@ -28,19 +28,20 @@ public class CountTest {
     }
     public static void testDec(int count){
         Count count1=new Count(count);
-        if (count<0){
-            System.out.println("тест dec окончен");
-            return ;
-        }
-        for (int i = count; i>=0 ; i--) {
-           boolean a=count1.dec();
-            System.out.print(count1.getCount()+" ");
-            if (a){
-                System.out.println("count равен 0");
-                break;
-            }
+        boolean a= count1.dec();
+        if (a){
+
+            System.out.println("count равен 0");
+            return;
 
         }
+
+        for (int i = count; i>0 ; i--) {
+            System.out.print(count1.getCount() + " ");
+        }
+
+
+
         System.out.println();
         System.out.println("тест dec окончен");
     }
