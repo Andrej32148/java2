@@ -12,16 +12,24 @@ public class CountTest {
 
     public static void testInc(int count){
         Count count1=new Count();
+        if(count<=0){
+            System.out.println("тест inc окончен");
+            return ;
+        }
         for (int i = 0; i < count; i++) {
          count1.inc();
             System.out.print(count1.getCount()+" ");
         }
-        System.out.println("");
+
         System.out.println("тест inc окончен");
     }
     public static void testDec(int count){
         Count count1=new Count(count);
-        for (int i = count; i>0 ; i--) {
+        if (count<0){
+            System.out.println("тест dec окончен");
+            return ;
+        }
+        for (int i = count; i>=0 ; i--) {
            boolean a=count1.dec();
             System.out.print(count1.getCount()+" ");
             if (a){
@@ -32,6 +40,7 @@ public class CountTest {
         }
         System.out.println("тест dec окончен");
     }
+
 
 
     public static void main(String[] args) {

@@ -20,7 +20,7 @@ public class Count {
 
     public boolean dec() {
         count--;
-        return count == 0;
+        return count <= 0;
     }
 
     public static void main(String[] args) {
