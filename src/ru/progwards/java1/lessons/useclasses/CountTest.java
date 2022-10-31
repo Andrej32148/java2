@@ -19,9 +19,12 @@ public class CountTest {
         for (int i = 0; i < count; i++) {
          count1.inc();
             System.out.print(count1.getCount()+" ");
-        }
 
+        }
+        System.out.println();
         System.out.println("тест inc окончен");
+
+
     }
     public static void testDec(int count){
         Count count1=new Count(count);
@@ -38,6 +41,7 @@ public class CountTest {
             }
 
         }
+        System.out.println();
         System.out.println("тест dec окончен");
     }
 
