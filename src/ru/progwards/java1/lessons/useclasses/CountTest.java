@@ -11,7 +11,7 @@ public class CountTest {
 
 
     public static void testInc(int count){
-        Count count1=new Count(count);
+        Count count1=new Count();
         for (int i = 0; i < count; i++) {
          count1.inc();
             System.out.print(count1.getCount()+" ");
