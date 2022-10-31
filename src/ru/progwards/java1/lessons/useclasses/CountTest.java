@@ -28,16 +28,19 @@ public class CountTest {
     }
     public static void testDec(int count){
         Count count1=new Count(count);
-        boolean a= count1.dec();
-        if (a){
+        if (count1.dec()){
 
             System.out.println("count равен 0");
             return;
 
         }
 
-        for (int i = count; i>0 ; i--) {
+        for (int i = count1.getCount(); i>1; i--) {
+            count1.dec();
+
             System.out.print(count1.getCount() + " ");
+
+
         }
 
 
