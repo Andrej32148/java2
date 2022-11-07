@@ -6,12 +6,10 @@ public class Cow extends Animal
         super(name);
     }
 
-
     @Override
     public String say() {
         return  "мууууууу";
     }
-
     @Override
     public String kind() {
         return "корова";

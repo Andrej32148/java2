@@ -10,7 +10,6 @@ public class ZonedTime extends Time {
 
     public ZonedTime(int hours, int minutes, int seconds) {
         super(hours, minutes, seconds);
-        zone = new TimeZone(hours, minutes);
 
     }
 
