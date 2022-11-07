@@ -9,7 +9,7 @@ public abstract class Animal {
     public abstract String kind();
     public abstract String say();
     public String toString(){
-        return "Это <"+kind()+"> <"+name+">";
+        return "Это "+kind()+" "+name+" ";
 
     }
 }
