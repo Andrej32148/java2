@@ -1,5 +1,7 @@
 package ru.progwards.java1.lessons.classes1;
 
+import ru.progwards.java1.lessons.inheritance.TimeZone;
+
 public class Time {
     int hours;
     int minutes;
@@ -18,7 +20,9 @@ public class Time {
     public Time(int hours, int minutes) {
         this(hours, minutes, minutes);
     }
-
+    public TimeZone getTimeZone(){
+        return null;
+    }
 
     public String toString() {
 
