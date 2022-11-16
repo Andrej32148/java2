@@ -7,7 +7,7 @@ public class Hamster extends Animal{
 
     @Override
     public String say() {
-        return "рум-хрум-хрум" ;
+        return "хрум-хрум-хрум" ;
     }
 
     @Override
