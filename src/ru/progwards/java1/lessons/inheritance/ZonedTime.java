@@ -20,14 +20,20 @@ public class ZonedTime extends Time {
 
     @Override
     public int secondsBetween(Time time) {
-        if (time.getTimeZone() != null) {
-            return this.secondsBetween(time);
+        int a;
+        int b;
+        if (getTimeZone() == null) {
+            a = toSeconds();
+        } else {
+            a = toSeconds() + zone.hours * 3600 + zone.minutes * 60;
         }
-        return 0;
+            b = time.toSeconds();
+        return a - b;
     }
+
     public static void main(String[] args) {
         Time time = new Time(12, 45, 16);
-        Time time1 = new ZonedTime(12, 46, 10);
+        Time time1 = new ZonedTime(12, 46, 10, new TimeZone(5));
         System.out.println(time.secondsBetween(time1));
     }
 }

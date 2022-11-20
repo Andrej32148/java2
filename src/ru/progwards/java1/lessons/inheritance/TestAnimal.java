@@ -13,7 +13,7 @@ public class TestAnimal {
        printAnimal( new Cow("Рыжая"));
        printAnimal( new Duck("Даша"));
        printAnimal( new Duck("Маша"));
-       printAnimal( new Hamster("Аркадий"));
+       printAnimal( new Hamster("Акакий"));
        printAnimal( new Hamster("Поликарп"));
     }
 }
