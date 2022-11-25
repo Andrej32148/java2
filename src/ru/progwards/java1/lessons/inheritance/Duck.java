@@ -14,4 +14,12 @@ public  class Duck extends Animal {
     public String kind() {
         return "утка";
     }
+    @Override
+    public double getFoodCoeff(){
+        return 0.04;
+    }
+    @Override
+    public FoodKind getFoodKind(){
+        return FoodKind.CORN;
+    }
 }

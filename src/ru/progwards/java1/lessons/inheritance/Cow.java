@@ -15,4 +15,12 @@ public class Cow extends Animal
     public String kind() {
         return "корова";
     }
+    @Override
+    public double getFoodCoeff(){
+return 0.05;
+    }
+    @Override
+    public FoodKind getFoodKind(){
+        return FoodKind.HEY;
+    }
 }

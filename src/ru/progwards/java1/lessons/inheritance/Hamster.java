@@ -14,4 +14,12 @@ public class Hamster extends Animal{
     public String kind() {
         return "хомяк";
     }
-}
+
+    @Override
+    public double getFoodCoeff(){
+        return 0.06;
+    }
+    @Override
+    public FoodKind getFoodKind(){
+        return FoodKind.CORN;
+    }}
