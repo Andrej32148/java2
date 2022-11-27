@@ -1,7 +1,6 @@
 package ru.progwards.java1.lessons.classescompare;
 
 
-import ru.progwards.java1.lessons.inheritance.Animal;
 
 public class Cow extends Animal
 {
