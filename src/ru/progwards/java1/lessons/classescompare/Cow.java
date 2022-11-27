@@ -22,6 +22,6 @@ return 0.05;
     }
     @Override
     public FoodKind getFoodKind(){
-        return FoodKind.HEY;
+        return FoodKind.HAY;
     }
 }

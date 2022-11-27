@@ -5,7 +5,7 @@ public abstract class Animal {
     private Double weight;
 
     public enum FoodKind {
-        HEY,
+        HAY,
         CORN,
     }
 
@@ -23,7 +23,7 @@ public abstract class Animal {
 
     public double calculateFoodPrice() {
         double a=0;
-        if (getFoodKind() == FoodKind.HEY) {
+        if (getFoodKind() == FoodKind.HAY) {
              a=calculateFoodWeight() * 2.00;
 
         }
@@ -53,7 +53,7 @@ public abstract class Animal {
         }
 
         public boolean equals (Animal o){
-            return name.equals(o.name) & weight.equals(o.name) & kind().equals(o.kind());
+            return name.equals(o.name) & weight.equals(o.weight) & kind().equals(o.kind());
         }
 
     }
