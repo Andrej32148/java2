@@ -10,7 +10,7 @@ public class Matrix {
 
     public int maxInCol(int num) {
 
-        for (int i = 0; i <a.length; i++) {
+        for (int i = 0; i <=a.length; i++) {
             if (a[i][num] > a[i + 1][num])
                 b = a[i][num];
         }
@@ -19,7 +19,7 @@ public class Matrix {
 
     public int maxInRow(int num) {
 
-        for (int i = 0; i <a[num].length; i++) {
+        for (int i = 0; i <=a[num].length; i++) {
             if (a[num][i] > a[num][i + 1])
                 b = a[num][i];
         }
@@ -29,7 +29,7 @@ public class Matrix {
 
     public int max() {
 
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 0; i <= a.length; i++) {
             if (maxInCol(i) > maxInCol(++i)) {
                 b = maxInCol(i);
             }
