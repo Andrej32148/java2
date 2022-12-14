@@ -32,7 +32,7 @@ public class Matrix {
 
 
     public int max() {
-
+int b=0;
         for (int i = 0; i < a.length+1; i++) {
             if (maxInCol(i) > maxInCol(++i)) {
                 b = maxInCol(i);
@@ -42,19 +42,12 @@ public class Matrix {
     }
 
     public boolean isMatrix(){
-        if (a.length!=a[0].length){
-            return false;
-        }
-        for (int i = 0; i <a.length; i++) {
-            for (int j = 0; j < a[i].length-1; j++) {
-                if (a[i].length!=a[i+1].length) {
-                    return false;
-                }
-
+        for (int i = 0; i <a.length-1; i++) {
+            if (a[i].length == a[i + 1].length) {
+                return true;
             }
-
         }
-        return true;
+         return false;
     }
     public int[][] transposition() {
         int[][]b=new int[a[0].length][a.length];
