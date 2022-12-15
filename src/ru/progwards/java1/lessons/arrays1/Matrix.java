@@ -9,9 +9,9 @@ public class Matrix {
     }
 
     public int maxInCol(int num) {
-        if(num==0){
-            return 0;
-        }
+
+
+
         for (int i = 0; i <a.length-1; i++) {
             if (a[i][num] > a[i + 1][num])
                 b = a[i][num];
@@ -20,10 +20,8 @@ public class Matrix {
     }
 
     public int maxInRow(int num) {
-        if(num==0){
-            return 0;
-        }
-        for (int i = 0; i <=a[num].length-1; i++) {
+
+        for (int i = 0; i <a[num].length-1; i++) {
             if (a[num][i] > a[num][i + 1])
                 b = a[num][i];
         }
@@ -32,7 +30,6 @@ public class Matrix {
 
 
     public int max() {
-int b=0;
         for (int i = 0; i < a.length+1; i++) {
             if (maxInCol(i) > maxInCol(++i)) {
                 b = maxInCol(i);
@@ -78,8 +75,10 @@ int b=0;
     }
 
     public static void main(String[] args) {
-        Matrix matrix=new Matrix(new int[10][5]);
+        int[][] s={{5,9,4},{8,3,6},{4,9,4}};
+        Matrix matrix=new Matrix(s);
         System.out.println(matrix.isMatrix());
+        System.out.println(matrix.maxInRow(2));
     }
 
 
