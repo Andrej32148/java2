@@ -1,6 +1,6 @@
 package ru.progwards.java1.lessons.arrays2;
 
-import ru.progwards.java1.lessons.arrays1.ArraySort;
+
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
