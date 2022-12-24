@@ -9,13 +9,14 @@ public class IntArrays {
     public static String toString(int []a){
         String b="";
         for (int i = 0; i < a.length; i++) {
-            b=b+a[i]+","+" ";
+            b="["+b+a[i]+","+" ";
         }
+        b=b+"]";
         return b;
     }
 
     public static boolean equals1(int[] a1, int[] a2){
-        if (a1.length== a2.length){
+        if (a1.length!=a2.length){
             return false;
         }
         for (int i = 0; i < a1.length; i++) {
