@@ -41,5 +41,13 @@ public class DIntArray {
     public int at(int pos){
         return a[pos];
     }
+
+
+
+    public static void main(String[] args) {
+        int[] b = {1, 6,8};
+        int[] a = {1, 6,8};
+DIntArray v=new DIntArray(a);
+    }
 }
 
