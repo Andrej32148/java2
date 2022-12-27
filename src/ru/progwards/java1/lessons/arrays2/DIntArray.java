@@ -2,7 +2,9 @@ package ru.progwards.java1.lessons.arrays2;
 
 public class DIntArray {
     private int[] a;
+public DIntArray(){
 
+}
     public DIntArray(int[] a) {
         this.a = a;
     }
