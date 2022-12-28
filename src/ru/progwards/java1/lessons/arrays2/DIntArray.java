@@ -1,5 +1,7 @@
 package ru.progwards.java1.lessons.arrays2;
 
+import java.util.Arrays;
+
 public class DIntArray {
     private int[] a;
 public DIntArray(){
@@ -11,10 +13,10 @@ public DIntArray(){
 
     public void add(int num) {
         int[] b = new int[a.length + 1];
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 0; i < a.length-1; i++) {
             b[i] = a[i];
         }
-        b[b.length ] = num;
+        b[b.length-1] = num;
         a = b;
     }
 
@@ -50,7 +52,9 @@ public DIntArray(){
         int[] b = {1, 6,8};
         int[] a = {1, 6,8};
 DIntArray v=new DIntArray(a);
-
+v.atInsert(2,2);
+v.add(4);
+        System.out.println(Arrays.toString(a));
     }
 }
 
