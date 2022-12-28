@@ -14,7 +14,7 @@ public DIntArray(){
         for (int i = 0; i < a.length; i++) {
             b[i] = a[i];
         }
-        b[a.length - 1] = num;
+        b[b.length ] = num;
         a = b;
     }
 
@@ -24,7 +24,7 @@ public DIntArray(){
             p[i] = a[i];
         }
         for (int i = pos; i < p.length; i++) {
-            p[i + 1] = a[i];
+            p[i] = a[i-1];
         }
         a = p;
         a[pos] = num;
@@ -50,6 +50,7 @@ public DIntArray(){
         int[] b = {1, 6,8};
         int[] a = {1, 6,8};
 DIntArray v=new DIntArray(a);
+
     }
 }
 
