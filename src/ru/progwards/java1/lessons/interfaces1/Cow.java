@@ -1,10 +1,17 @@
-package ru.progwards.java1.lessons.inheritance;
+package ru.progwards.java1.lessons.interfaces1;
+
 
 
 public class Cow extends Animal
 {
-    public Cow(String name) {
-        super(name);
+    public Cow(String name,double weight) {
+        super(name,weight);
+
+    }
+
+    @Override
+    public Color getColor() {
+return Color.RED;
     }
 
     @Override

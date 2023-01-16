@@ -1,10 +1,10 @@
-package ru.progwards.java1.lessons.inheritance;
+package ru.progwards.java1.lessons.interfaces1;
 
-import ru.progwards.java1.lessons.interfaces1.Color;
-
-public abstract class Animal {
+public abstract class Animal implements IColor, Comparable<Animal>{
     private String name;
     private Double weight;
+private Color color;
+
 
     public enum FoodKind {
         HEY,
@@ -34,17 +34,16 @@ public abstract class Animal {
         }
         return a;
     }
-    public Animal(String name, double weight) {
+    public Animal(String name,double weight) {
             this.name = name;
+            this.weight=weight;
         }
         public abstract String kind ();
 
-    public abstract Color getColor();
-
-    public abstract String say ();
+        public abstract String say ();
 
         public String toString () {
-            return "Это " + kind() + " " + name + " ";
+            return "<"+kind() +"> <"+name +"> <"+weight+"> <"+getColor()+">";
 
         }
 
@@ -52,7 +51,7 @@ public abstract class Animal {
             this.weight = weight;
         }
 
-        int compareTo (Animal animal){
+        public int compareTo(Animal animal){
             return weight.compareTo(animal.weight);
         }
 
