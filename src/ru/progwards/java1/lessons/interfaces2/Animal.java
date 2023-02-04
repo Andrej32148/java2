@@ -1,11 +1,16 @@
-package ru.progwards.java1.lessons.interfaces1;
+package ru.progwards.java1.lessons.interfaces2;
 
-import ru.progwards.java1.lessons.interfaces2.Home;
 
-public abstract class Animal implements IColor, Home, Comparable<Animal>{
+
+public abstract class Animal extends CompareHome implements IColor, Comparable<Animal>,ToString,CompareWeight{
     private String name;
     private Double weight;
-private Color color;
+private IColor color;
+
+    @Override
+    public IColor getColor() {
+        return null;
+    }
 
 
     public enum FoodKind {
@@ -13,9 +18,23 @@ private Color color;
         CORN,
     }
 
+    @Override
+    public String getString() {
+        return toString();
+    }
+
     abstract public FoodKind getFoodKind();
 
-    public Double getWeight() {
+    @Override
+    public CompareResult compareWeight(CompareWeight smthHasWeight) {
+        if(this.getWeight()>smthHasWeight.getWeight())
+            return CompareResult.GREATER;
+        if(this.getWeight()==smthHasWeight.getWeight())
+            return CompareResult.EQUAL;
+        else return CompareResult.LESS;
+    }
+
+    public double getWeight() {
         return weight;
     }
 
@@ -36,7 +55,7 @@ private Color color;
         }
         return a;
     }
-    public Animal(String name,double weight) {
+    public Animal(String name, double weight) {
             this.name = name;
             this.weight=weight;
         }

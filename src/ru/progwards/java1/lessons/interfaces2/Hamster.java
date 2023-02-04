@@ -1,9 +1,17 @@
-package ru.progwards.java1.lessons.interfaces1;
+package ru.progwards.java1.lessons.interfaces2;
 
+
+import ru.progwards.java1.lessons.interfaces1.Animal;
+import ru.progwards.java1.lessons.interfaces1.Color;
 
 public class Hamster extends Animal {
-    public Hamster(String name,double weight) {
+    public Hamster(String name, double weight) {
         super(name, weight);
+    }
+
+    @Override
+    public String getHome() {
+        return "поле";
     }
 
     @Override
@@ -28,10 +36,4 @@ public class Hamster extends Animal {
     @Override
     public FoodKind getFoodKind(){
         return FoodKind.CORN;
-    }
-
-    @Override
-    public String getHome() {
-        return null;
-    }
-}
+    }}

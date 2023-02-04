@@ -1,19 +1,22 @@
-package ru.progwards.java1.lessons.interfaces1;
+package ru.progwards.java1.lessons.interfaces2;
 
+
+import ru.progwards.java1.lessons.interfaces1.Animal;
+import ru.progwards.java1.lessons.interfaces1.Color;
 
 public  class Duck extends Animal {
-    public Duck(String name,double weight) {
+    public Duck(String name, double weight) {
         super(name, weight);
+    }
+
+    @Override
+    public String getHome() {
+        return "ферма";
     }
 
     @Override
     public Color getColor() {
         return Color.GRAY;
-    }
-
-    @Override
-    public String getHome() {
-        return null;
     }
 
     @Override
