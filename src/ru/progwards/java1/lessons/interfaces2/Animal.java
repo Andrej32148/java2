@@ -2,15 +2,12 @@ package ru.progwards.java1.lessons.interfaces2;
 
 
 
-public abstract class Animal extends CompareHome implements IColor, Comparable<Animal>,ToString,CompareWeight{
+public abstract class Animal extends CompareHome implements IColor, Home,Comparable<Animal>,ToString,CompareWeight{
     private String name;
     private Double weight;
 private IColor color;
 
-    @Override
-    public IColor getColor() {
-        return null;
-    }
+
 
 
     public enum FoodKind {
