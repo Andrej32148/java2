@@ -1,8 +1,7 @@
 package ru.progwards.java1.lessons.interfaces2;
 
 
-import ru.progwards.java1.lessons.interfaces1.Animal;
-import ru.progwards.java1.lessons.interfaces1.Color;
+
 
 public class Hamster extends Animal {
     public Hamster(String name, double weight) {

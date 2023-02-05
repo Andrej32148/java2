@@ -1,6 +1,5 @@
 package ru.progwards.java1.lessons.interfaces2;
 
-import ru.progwards.java1.lessons.inheritance.TimeZone;
 
 public class Time implements ToString{
     int hours;
