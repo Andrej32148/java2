@@ -1,9 +1,6 @@
 package ru.progwards.java1.lessons.interfaces2;
 
-import ru.progwards.java1.lessons.interfaces1.Animal;
-import ru.progwards.java1.lessons.interfaces1.Cow;
-import ru.progwards.java1.lessons.interfaces1.Duck;
-import ru.progwards.java1.lessons.interfaces1.Hamster;
+
 
 public class CompareHome {
     public static boolean sameHome(Home h1, Home h2){
