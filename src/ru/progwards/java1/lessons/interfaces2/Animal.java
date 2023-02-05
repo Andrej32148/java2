@@ -5,7 +5,7 @@ package ru.progwards.java1.lessons.interfaces2;
 public abstract class Animal extends CompareHome implements IColor, Home,Comparable<Animal>,ToString,CompareWeight{
     private String name;
     private Double weight;
-private IColor color;
+private Color color;
 
 
 
