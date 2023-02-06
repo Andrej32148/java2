@@ -14,10 +14,7 @@ public  class Duck extends Animal {
         return Color.GRAY;
     }
 
-    @Override
-    public String getHome() {
-        return null;
-    }
+
 
     @Override
     public String say() {

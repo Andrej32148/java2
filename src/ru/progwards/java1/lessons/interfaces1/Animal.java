@@ -1,8 +1,8 @@
 package ru.progwards.java1.lessons.interfaces1;
 
-import ru.progwards.java1.lessons.interfaces2.Home;
 
-public abstract class Animal implements IColor, Home, Comparable<Animal>{
+
+public abstract class Animal implements IColor, Comparable<Animal>{
     private String name;
     private Double weight;
 private Color color;

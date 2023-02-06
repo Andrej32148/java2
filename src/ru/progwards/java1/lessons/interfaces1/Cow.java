@@ -12,10 +12,7 @@ public class Cow extends Animal
     public Cow() {
     }
 
-    @Override
-    public String getHome() {
-        return "ферма";
-    }
+
 
     @Override
     public Color getColor() {

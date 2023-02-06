@@ -33,8 +33,5 @@ public class Hamster extends Animal {
         return FoodKind.CORN;
     }
 
-    @Override
-    public String getHome() {
-        return null;
-    }
+
 }
