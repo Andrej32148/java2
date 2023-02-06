@@ -6,6 +6,9 @@ public class Hamster extends Animal {
         super(name, weight);
     }
 
+    public Hamster() {
+    }
+
     @Override
     public Color getColor() {
         return Color.BEIGE;

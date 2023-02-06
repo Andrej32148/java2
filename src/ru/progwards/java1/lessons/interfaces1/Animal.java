@@ -40,6 +40,9 @@ private Color color;
             this.name = name;
             this.weight=weight;
         }
+        public Animal(){
+
+        }
         public abstract String kind ();
 
         public abstract String say ();

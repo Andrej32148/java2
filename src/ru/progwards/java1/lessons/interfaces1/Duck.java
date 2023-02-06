@@ -6,6 +6,9 @@ public  class Duck extends Animal {
         super(name, weight);
     }
 
+    public Duck() {
+    }
+
     @Override
     public Color getColor() {
         return Color.GRAY;

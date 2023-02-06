@@ -7,6 +7,9 @@ public  class Duck extends Animal {
         super(name, weight);
     }
 
+    public Duck() {
+    }
+
     @Override
     public String getHome() {
         return "ферма";
