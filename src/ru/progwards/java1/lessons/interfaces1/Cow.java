@@ -12,7 +12,9 @@ public class Cow extends Animal
     public Cow() {
     }
 
-
+    public Cow(String name) {
+        super(name);
+    }
 
     @Override
     public Color getColor() {

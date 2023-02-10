@@ -8,16 +8,16 @@ public class TestString {
     }
 
     public static void main(String[] args) {
-Cow cow=new Cow("Пеструшка", 350.0);
-Duck duck=new Duck("Даша",3.0);
-Hamster hamster=new Hamster("Поликарп",0.25);
-Time time=new Time(1,12,55);
-ComplexNum complexNum=new ComplexNum(22,5);
+        Cow cow = new Cow("Пеструшка");
+        Duck duck = new Duck("Даша");
+        Hamster hamster = new Hamster("Поликарп");
+        Time time = new Time(1, 12, 55);
+        ComplexNum complex = new ComplexNum(22, 5);
         print(cow);
         print(duck);
         print(hamster);
         print(time);
-        print(complexNum);
+        print(complex);
     }
 
 }

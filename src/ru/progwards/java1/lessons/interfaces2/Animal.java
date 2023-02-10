@@ -9,7 +9,12 @@ private Color color;
         HEY,
         CORN,
     }
-public Animal(){};
+
+    public Animal(){} ;
+    public Animal(String name) {
+        this.name = name;
+    }
+
     @Override
     public String getString() {
         return toString();

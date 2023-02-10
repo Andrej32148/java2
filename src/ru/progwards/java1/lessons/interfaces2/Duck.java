@@ -7,6 +7,10 @@ public  class Duck extends Animal {
         super(name, weight);
     }
 
+    public Duck(String name) {
+        super(name);
+    }
+
     public Duck() {
     }
 

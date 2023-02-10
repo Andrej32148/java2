@@ -9,6 +9,10 @@ public class Hamster extends Animal {
     public Hamster() {
     }
 
+    public Hamster(String name) {
+        super(name);
+    }
+
     @Override
     public Color getColor() {
         return Color.BEIGE;

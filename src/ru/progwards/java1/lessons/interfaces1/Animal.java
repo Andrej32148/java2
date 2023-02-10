@@ -7,6 +7,14 @@ public abstract class Animal implements IColor, Comparable<Animal>{
     private Double weight;
 private Color color;
 
+    public Animal(String name) {
+        this.name = name;
+    }
+
+
+    public Animal() {
+
+    }
 
     public enum FoodKind {
         HEY,
@@ -40,9 +48,7 @@ private Color color;
             this.name = name;
             this.weight=weight;
         }
-        public Animal(){
 
-        }
         public abstract String kind ();
 
         public abstract String say ();

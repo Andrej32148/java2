@@ -8,6 +8,10 @@ public class Hamster extends Animal {
         super(name, weight);
     }
 
+    public Hamster(String name) {
+        super(name);
+    }
+
     public Hamster() {
     }
 
