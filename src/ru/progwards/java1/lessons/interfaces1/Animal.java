@@ -4,7 +4,7 @@ package ru.progwards.java1.lessons.interfaces1;
 
 public abstract class Animal implements IColor, Comparable<Animal>{
     private String name;
-    private Double weight;
+    private  Double weight;
 private Color color;
 
     public Animal(String name) {
@@ -61,8 +61,9 @@ private Color color;
         public void setWeight ( double weight){
             this.weight = weight;
         }
-
+@Override
         public int compareTo(Animal animal){
+
             return weight.compareTo(animal.weight);
         }
 
