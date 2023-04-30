@@ -1,5 +1,9 @@
 package ru.progwards.java1.lessons.date;
 
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.Period;
+import java.time.ZoneId;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -50,14 +54,39 @@ public class DateDiff {
         long milliseconds = timeDifference % 1000;
         long seconds = (timeDifference / 1000) % 60;
         long minutes = (timeDifference / (1000 * 60)) % 60;
-        long hours = (timeDifference / (1000 * 60 * 60)) % 24;
+        long hours = (timeDifference  / (1000 * 60 * 60)) % 24;
         long days = (timeDifference / (1000 * 60 * 60 * 24)) % 30; // Возможно приближенное значение месяца
-        long months = (timeDifference / (1000 * 60 * 60 * 24 * 30)); // Возможно приближенное значение месяца
+        long months  =(timeDifference / (1000 * 60 * 60 * 24 * 30));// Возможно приближенное значение месяца
 
         // Выводим результат на консоль
         System.out.println("До дня рождения " + months + " месяцев, " + days + " дней, " +
                 hours + " часов, " + minutes + " минут, " + seconds + " секунд, " + milliseconds + " миллисекунд");
     }
+    public static void averageTime(Date[] events) {
+        long totalDurationInMillis = 0;
+        int intervalCount = 0;
+        LocalDateTime prevDateTime = null;
+
+        for (Date event : events) {
+            LocalDateTime dateTime = event.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
+            if (prevDateTime != null) {
+                Duration duration = Duration.between(prevDateTime, dateTime);
+                totalDurationInMillis += duration.toMillis();
+                intervalCount++;
+            }
+            prevDateTime = dateTime;
+        }
+
+        long averageInMillis = totalDurationInMillis / intervalCount;
+        Duration averageDuration = Duration.ofMillis(averageInMillis);
+        Period period = Period.between(events[0].toInstant().atZone(ZoneId.systemDefault()).toLocalDate(),
+                events[events.length - 1].toInstant().atZone(ZoneId.systemDefault()).toLocalDate());
+
+        System.out.printf("Среднее время между событиями %d лет, %d месяцев, %d дней, %d минут, %d секунд, %d миллисекунд\n",
+                period.getYears(), period.getMonths(), period.getDays(),
+                averageDuration.toMinutesPart(), averageDuration.toSecondsPart(), averageDuration.toMillisPart());
+    }
+
 
     public static void main(String[] args) {
         Date d=new Date(1983, Calendar.AUGUST,15,17,55,37);
